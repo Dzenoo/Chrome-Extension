@@ -1,0 +1,22 @@
+{
+  "name": "Extension Google",
+  "description": "My Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "128": "icons/icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "css": ["main.css"],
+      "js": ["main.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "resources": ["images/logo.png"]
+    }
+  ]
+}
